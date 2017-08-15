@@ -1,20 +1,59 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        {% block head %}
-    {# <link rel="stylesheet"  href="/files/stylesheets/style.css">#}
-         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-         <script  src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="  crossorigin="anonymous"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-            <title>{% block title %}{% endblock %} </title>
-        {% endblock %}
-    </head>
-    <body>
-        <div id="content" class="container">{% block content %}  {% endblock %} <p> Hola</p></div>
-        <div id="footer" class="container">
-            {% block footer %}
-                &copy; Copyright 2011 by <a href="http://domain.invalid/">you</a>.
-            {% endblock %}
-        </div>
-    </body>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Platz - Free Grid Wordpress Theme</title>
+
+<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="/files/images/small-logo-01.png">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,900,900italic,700italic,700,500italic,400italic,500,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='/files/stylesheets/style.css' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body>
+
+<a name="ancre"></a>
+
+<!-- CACHE -->
+<div class="cache"></div>
+
+<!-- HEADER -->
+
+{% block header %} {% endblock header %}
+
+<!-- NAVBAR -->
+
+{% block NAVBAR %} {% endblock NAVBAR %}
+
+<!-- FILTER -->	
+
+{% block FILTER %} {% endblock FILTER %}
+	
+<!-- PORTFOLIO -->
+
+<div id="wrapper-container">
+
+{% block CONTENEDOR %} {% endblock CONTENEDOR %}   
+
+
+{% block FOOTER %}    {% endblock FOOTER %}
+
+</div>
+
+
+<!-- SCRIPT -->
+
+{% block JS %}      {% endblock JS %}
+
+
+</body>
+
+
 </html>
